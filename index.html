@@ -3,13 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shibam Karmakar – Portfolio</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Shibam | Software Developer Portfolio</title>
+
+<meta name="description" content="Shibam - Software Developer specializing in AI, Computer Vision, Web Development and CUDA accelerated systems. View projects and contact details.">
+
+<meta name="keywords" content="Shibam, Software Developer, AI Developer, YOLO, DeepSORT, Web Developer, Portfolio, CUDA, Computer Vision">
+
+<meta name="author" content="Shibam">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:title" content="Shibam | Software Developer Portfolio">
+<meta property="og:description" content="AI & Web Developer specializing in real-time systems and intelligent applications.">
+<meta property="og:image" content="https://Shibam123a.github.io/shibam-portfolio/assets/preview.png">
+<meta property="og:url" content="https://Shibam123a.github.io/shibam-portfolio/">
+<meta property="og:type" content="website">
+
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+
+<link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
 
 <header id="home" class="hero">
-  <nav class="navbar">
+  <!-- <nav class="navbar">
     <h2 class="logo">Portfolio</h2>
     <ul class="nav-links">
       <li><a href="#home">Home</a></li>
@@ -20,7 +36,25 @@
       <li><a href="#contact">Contact</a></li>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     </ul>
-  </nav>
+  </nav> -->
+<nav class="navbar">
+  <div class="logo">Shibam Karmakar</div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  </ul>
+
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>
+
 
 <div class="hero-container">
 <div class="hero-content">
@@ -73,7 +107,7 @@
         new technologies.
       </p>
 
-      <a href="assets/Your_Resume.pdf" class="btn primary" download>
+      <a href="assets/resume.pdf" class="btn primary" download>
         Download Resume
       </a>
 
@@ -361,12 +395,12 @@
       </p>
 
       <div class="contact-details">
-        <p><strong>Email:</strong> yourname@email.com</p>
+        <p><strong>Email:</strong> shibamkarmakar92@gmail.com</p>
         <p><strong>Location:</strong> India</p>
       </div>
 
       <!-- RESUME BUTTON -->
-      <a href="assets/Your_Resume.pdf" class="btn primary resume-btn" download>
+      <a href="assets/resume.pdf" class="btn primary resume-btn" download>
         Download Resume
       </a>
 
@@ -404,7 +438,6 @@
 
       <button type="submit" class="btn primary">Send Message</button>
     </form>
-
   </div>
 </section>
 
@@ -417,7 +450,7 @@
     <div class="footer-left">
       <h3>Shibam Karmakar</h3>
       <a href="mailto:shibamkarmakar92@gmail.com">📧Email: shibamkarmakar92@gmail.com</a>
-    <div> <a href="tel:+917602986959">📞Phone: +91 7602986959</p></div>
+    <div> <a href="tel:+917602986959">📞Phone: +91 7602986959</a></div>
     </div>
 
     <div class="footer-center">
@@ -474,6 +507,16 @@
     });
   });
 </script>
+
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("navLinks");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
+
 
 </body>
 
