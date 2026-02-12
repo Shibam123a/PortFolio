@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://Shibam123a.github.io/shibam-portfolio/sitemap.xml
